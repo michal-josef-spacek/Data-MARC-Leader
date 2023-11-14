@@ -7,7 +7,9 @@ use Mo qw(build is);
 use Mo::utils qw(check_strings);
 use Readonly;
 
-Readonly::Array our @RECORD_STATUS => qw(a c d n p);
+Readonly::Array our @STATUS => qw(a c d n p);
+Readonly::Array our @TYPE => qw(a c d e f g i j k m o p r t);
+Readonly::Array our @BIBLIOGRAPHIC_LEVEL => qw(a b c d i m s);
 
 our $VERSION = 0.01;
 
@@ -19,7 +21,11 @@ has length => (
 	is => 'ro',
 );
 
-has record_status => (
+has status => (
+	is => 'ro',
+);
+
+has type => (
 	is => 'ro',
 );
 
@@ -27,15 +33,17 @@ has type_of_control => (
 	is => 'ro',
 );
 
-has type_of_record => (
-	is => 'ro',
-);
-
 sub BUILD {
 	my $self = shift;
 
-	# Check record_status.
-	check_strings($self, 'record_status', \@RECORD_STATUS);
+	# Check bibliographic_level.
+	check_strings($self, 'bibliographic_level', \@BIBLIOGRAPHIC_LEVEL);
+
+	# Check status.
+	check_strings($self, 'status', \@STATUS);
+
+	# Check type.
+	check_strings($self, 'type', \@TYPE);
 
 	return;
 }
