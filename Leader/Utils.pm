@@ -58,13 +58,13 @@ sub new {
 sub desc_bibliographic_level {
 	my ($self, $level_code) = @_;
 
-	return $BIBLIOGRAPHIC_LEVEL{$level_code);
+	return $BIBLIOGRAPHIC_LEVEL{$level_code};
 }
 
 sub desc_status {
 	my ($self, $status_code) = @_;
 
-	return $STATUS{$status_code);
+	return $STATUS{$status_code};
 }
 
 sub desc_type {
