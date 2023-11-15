@@ -158,6 +158,21 @@ Data::MARC::Leader - Data object for hash type.
 
  my $obj = Data::MARC::Leader->new(%params);
  my $bibliographic_level = $obj->bibliographic_level;
+ my $char_encoding_scheme = $obj->char_encoding_scheme;
+ my $data_base_addr = $obj->data_base_addr;
+ my $descriptive_cataloging_form = $obj->descriptive_cataloging_form;
+ my $encoding_level = $obj->encoding_level;
+ my $impl_def_portion_len = $obj->impl_def_portion_len;
+ my $indicator_count = $obj->indicator_count;
+ my $length = $obj->length;
+ my $length_of_field_portion_len = $obj->length_of_field_portion_len;
+ my $multipart_resource_record_level = $obj->multipart_resource_record_level;
+ my $starting_char_pos_portion_len = $obj->starting_char_pos_portion_len;
+ my $status = $obj->status;
+ my $subfield_code_count = $obj->subfield_code_count;
+ my $type = $obj->type;
+ my $type_of_control = $obj->type_of_control;
+ my $undefined = $obj->undefined;
 
 =head1 METHODS
 
@@ -175,6 +190,8 @@ Flag for activity of hash type.
 Possible valuea are 0/1.
 Default value is 1 (active).
 
+TODO
+
 =back
 
 Returns instance of object.
@@ -187,16 +204,12 @@ Get bibliographic level flag.
 
 Returns character.
 
+TODO
+
 =head1 ERRORS
 
  new():
-         Parameter 'active' must be a bool (0/1).
-                 Value: %s
-         Parameter 'id' must be a number.
-                 Value: %s
-         Parameter 'name' has length greater than '50'.
-                 Value: %s
-         Parameter 'name' is required.
+         TODO
 
 =head1 EXAMPLE
 
@@ -208,25 +221,20 @@ Returns character.
  use Data::MARC::Leader;
 
  my $obj = Data::MARC::Leader->new(
-         'active' => 1,
-         'id' => 10,
-         'name' => 'SHA-256',
+         'TODO' => 1,
  );
 
  # Print out.
  print 'Name: '.$obj->name."\n";
- print 'Active: '.$obj->active."\n";
- print 'Id: '.$obj->id."\n";
 
  # Output:
- # Name: SHA-256
- # Active: 1
- # Id: 10
+ # TODO
 
 =head1 DEPENDENCIES
 
 L<Mo>,
-L<Mo::utils>.
+L<Mo::utils>,
+L<Readonly>.
 
 =head1 REPOSITORY
 

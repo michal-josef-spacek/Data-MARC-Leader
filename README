@@ -5,88 +5,69 @@ SYNOPSIS
      use Data::MARC::Leader;
 
      my $obj = Data::MARC::Leader->new(%params);
-     my $active = $obj->active;
-     my $id = $obj->id;
-     my $name = $obj->name;
+     my $bibliographic_level = $obj->bibliographic_level;
+     my $char_encoding_scheme = $obj->char_encoding_scheme;
+     my $data_base_addr = $obj->data_base_addr;
+     my $descriptive_cataloging_form = $obj->descriptive_cataloging_form;
+     my $encoding_level = $obj->encoding_level;
+     my $impl_def_portion_len = $obj->impl_def_portion_len;
+     my $indicator_count = $obj->indicator_count;
+     my $length = $obj->length;
+     my $length_of_field_portion_len = $obj->length_of_field_portion_len;
+     my $multipart_resource_record_level = $obj->multipart_resource_record_level;
+     my $starting_char_pos_portion_len = $obj->starting_char_pos_portion_len;
+     my $status = $obj->status;
+     my $subfield_code_count = $obj->subfield_code_count;
+     my $type = $obj->type;
+     my $type_of_control = $obj->type_of_control;
+     my $undefined = $obj->undefined;
 
 METHODS
   "new"
-     my $obj = Data::HashType->new(%params);
+     my $obj = Data::MARC::Leader->new(%params);
 
     Constructor.
 
-    *       "active"
+    *       "bibliographic_level"
 
             Flag for activity of hash type. Possible valuea are 0/1. Default
             value is 1 (active).
 
-    *       "id"
-
-            Id of record. Id could be number. It's optional. Default value
-            is undef.
-
-    *       "name"
-
-            Hash type name. Maximal length of value is 50 characters. It's
-            required.
+            TODO
 
     Returns instance of object.
 
-  "active"
-     my $active = $obj->active;
+  "bibliographic_level"
+     my $bibliographic_level = $obj->bibliographic_level;
 
-    Get active flag.
+    Get bibliographic level flag.
 
-    Returns 0/1.
+    Returns character.
 
-  "id"
-     my $id = $obj->id;
-
-    Get hash type record id.
-
-    Returns number.
-
-  "name"
-     my $name = $obj->name;
-
-    Get hash type name.
-
-    Returns string.
+    TODO
 
 ERRORS
      new():
-             Parameter 'active' must be a bool (0/1).
-                     Value: %s
-             Parameter 'id' must be a number.
-                     Value: %s
-             Parameter 'name' has length greater than '50'.
-                     Value: %s
-             Parameter 'name' is required.
+             TODO
 
 EXAMPLE
      use strict;
      use warnings;
 
-     use Data::HashType;
+     use Data::MARC::Leader;
 
-     my $obj = Data::HashType->new(
-             'active' => 1,
-             'id' => 10,
-             'name' => 'SHA-256',
+     my $obj = Data::MARC::Leader->new(
+             'TODO' => 1,
      );
 
      # Print out.
      print 'Name: '.$obj->name."\n";
-     print 'Active: '.$obj->active."\n";
-     print 'Id: '.$obj->id."\n";
 
      # Output:
-     # Name: SHA-256
-     # Active: 1
-     # Id: 10
+     # TODO
 
 DEPENDENCIES
-    Mo, Mo::utils.
+    Mo, Mo::utils, Readonly.
 
 REPOSITORY
     <https://github.com/michal-josef-spacek/Data-MARC-Leader>
