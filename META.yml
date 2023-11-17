@@ -23,7 +23,6 @@ no_index:
     - xt
 requires:
   Class::Utils: 0
-  Exporter: 0
   Mo: 0
   Mo::utils: 0.05
   perl: 5.8.0

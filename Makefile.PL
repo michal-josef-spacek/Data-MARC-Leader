@@ -19,7 +19,6 @@ perl_version 5.008;
 readme_from 'Leader.pm';
 recursive_author_tests('xt');
 requires 'Class::Utils' => 0;
-requires 'Exporter' => 0;
 requires 'Mo' => 0;
 requires 'Mo::utils' => 0.05;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-MARC-Leader/issues';
