@@ -1,5 +1,5 @@
 NAME
-    Data::MARC::Leader - Data object for hash type.
+    Data::MARC::Leader - Data object for MARC leader.
 
 SYNOPSIS
      use Data::MARC::Leader;
@@ -30,8 +30,65 @@ METHODS
 
     *       "bibliographic_level"
 
-            Flag for activity of hash type. Possible valuea are 0/1. Default
-            value is 1 (active).
+            TODO
+
+    *       "char_encoding_scheme"
+
+            TODO
+
+    *       "data_base_addr"
+
+            TODO
+
+    *       "descriptive_cataloging_form"
+
+            TODO
+
+    *       "encoding_level"
+
+            TODO
+
+    *       "impl_def_portion_len"
+
+            TODO
+
+    *       "indicator_count"
+
+            TODO
+
+    *       "length"
+
+            TODO
+
+    *       "length_of_field_portion_len"
+
+            TODO
+
+    *       "multipart_resource_record_level"
+
+            TODO
+
+    *       "starting_char_pos_portion_len"
+
+            TODO
+
+    *       "status"
+
+            TODO
+
+    *       "subfield_code_count"
+
+            TODO
+
+    *       "type"
+
+            TODO
+
+    *       "type_of_control"
+
+            TODO
+
+    *       "undefined"
 
             TODO
 

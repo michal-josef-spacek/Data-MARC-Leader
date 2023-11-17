@@ -150,7 +150,7 @@ __END__
 
 =head1 NAME
 
-Data::MARC::Leader - Data object for hash type.
+Data::MARC::Leader - Data object for MARC leader.
 
 =head1 SYNOPSIS
 
@@ -186,9 +186,65 @@ Constructor.
 
 =item * C<bibliographic_level>
 
-Flag for activity of hash type.
-Possible valuea are 0/1.
-Default value is 1 (active).
+TODO
+
+=item * C<char_encoding_scheme>
+
+TODO
+
+=item * C<data_base_addr>
+
+TODO
+
+=item * C<descriptive_cataloging_form>
+
+TODO
+
+=item * C<encoding_level>
+
+TODO
+
+=item * C<impl_def_portion_len>
+
+TODO
+
+=item * C<indicator_count>
+
+TODO
+
+=item * C<length>
+
+TODO
+
+=item * C<length_of_field_portion_len>
+
+TODO
+
+=item * C<multipart_resource_record_level>
+
+TODO
+
+=item * C<starting_char_pos_portion_len>
+
+TODO
+
+=item * C<status>
+
+TODO
+
+=item * C<subfield_code_count>
+
+TODO
+
+=item * C<type>
+
+TODO
+
+=item * C<type_of_control>
+
+TODO
+
+=item * C<undefined>
 
 TODO
 
