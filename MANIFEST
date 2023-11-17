@@ -23,6 +23,7 @@ t/Data-MARC-Leader-Utils/02-version.t
 t/Data-MARC-Leader-Utils/03-new.t
 t/Data-MARC-Leader/01-use.t
 t/Data-MARC-Leader/02-version.t
+t/Data-MARC-Leader/03-new.t
 xt/Data-MARC-Leader-Utils/01-pod_coverage.t
 xt/Data-MARC-Leader-Utils/02-pod.t
 xt/Data-MARC-Leader/01-pod_coverage.t
