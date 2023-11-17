@@ -204,6 +204,94 @@ Get bibliographic level flag.
 
 Returns character.
 
+=head2 C<char_encoding_scheme>
+
+ my $char_encoding_scheme = $obj->char_encoding_scheme;
+
+TODO
+
+=head2 C<data_base_addr>
+
+ my $data_base_addr = $obj->data_base_addr;
+
+TODO
+
+=head2 C<descriptive_cataloging_form>
+
+ my $descriptive_cataloging_form = $obj->descriptive_cataloging_form;
+
+TODO
+
+=head2 C<encoding_level>
+
+ my $encoding_level = $obj->encoding_level;
+
+TODO
+
+=head2 C<impl_def_portion_len>
+
+ my $impl_def_portion_len = $obj->impl_def_portion_len;
+
+TODO
+
+=head2 C<indicator_count>
+
+ my $indicator_count = $obj->indicator_count;
+
+TODO
+
+=head2 C<length>
+
+ my $length = $obj->length;
+
+TODO
+
+=head2 C<length_of_field_portion_len>
+
+ my $length_of_field_portion_len = $obj->length_of_field_portion_len;
+
+TODO
+
+=head2 C<multipart_resource_record_level>
+
+ my $multipart_resource_record_level = $obj->multipart_resource_record_level;
+
+TODO
+
+=head2 C<starting_char_pos_portion_len>
+
+ my $starting_char_pos_portion_len = $obj->starting_char_pos_portion_len;
+
+TODO
+
+=head2 C<status>
+
+ my $status = $obj->status;
+
+TODO
+
+=head2 C<subfield_code_count>
+
+ my $subfield_code_count = $obj->subfield_code_count;
+
+TODO
+
+=head2 C<type>
+
+ my $type = $obj->type;
+
+TODO
+
+=head2 C<type_of_control>
+
+ my $type_of_control = $obj->type_of_control;
+
+TODO
+
+=head2 C<undefined>
+
+ my $undefined = $obj->undefined;
+
 TODO
 
 =head1 ERRORS
@@ -213,22 +301,65 @@ TODO
 
 =head1 EXAMPLE
 
-=for comment filename=create_and_print_marc_leader.pl
+=for comment filename=create_and_dump_marc_leader.pl
 
  use strict;
  use warnings;
 
+ use Data::Printer;
  use Data::MARC::Leader;
 
  my $obj = Data::MARC::Leader->new(
-         'TODO' => 1,
+         'bibliographic_level' => 'm',
+         'char_encoding_scheme' => 'a',
+         'data_base_addr' => 541,
+         'descriptive_cataloging_form' => 'i',
+         'encoding_level' => ' ',
+         'impl_def_portion_len' => '0',
+         'indicator_count' => '2',
+         'length' => 2200,
+         'length_of_field_portion_len' => '4',
+         'multipart_resource_record_level' => ' ',
+         'starting_char_pos_portion_len' => '5',
+         'status' => 'c',
+         'subfield_code_count' => '2',
+         'type' => 'e',
+         'type_of_control' => ' ',
+         'undefined' => '0',
  );
 
  # Print out.
- print 'Name: '.$obj->name."\n";
+ p $obj;
 
  # Output:
- # TODO
+ # Data::MARC::Leader  {
+ #     parents: Mo::Object
+ #     public methods (3):
+ #         BUILD
+ #         Mo::utils:
+ #             check_strings
+ #         Readonly:
+ #             Readonly
+ #     private methods (0)
+ #     internals: {
+ #         bibliographic_level               "m",
+ #         char_encoding_scheme              "a",
+ #         data_base_addr                    541,
+ #         descriptive_cataloging_form       "i",
+ #         encoding_level                    " ",
+ #         impl_def_portion_len              0,
+ #         indicator_count                   2,
+ #         length                            2200,
+ #         length_of_field_portion_len       4,
+ #         multipart_resource_record_level   " ",
+ #         starting_char_pos_portion_len     5,
+ #         status                            "c",
+ #         subfield_code_count               2,
+ #         type                              "e",
+ #         type_of_control                   " ",
+ #         undefined                         0
+ #     }
+ # }
 
 =head1 DEPENDENCIES
 
