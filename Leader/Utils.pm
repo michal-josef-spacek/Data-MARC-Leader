@@ -83,6 +83,10 @@ Readonly::Hash our %TYPE => (
 	'r' => 'Three-dimensional artifact or naturally occurring object',
 	't' => 'Manuscript language material',
 );
+Readonly::Hash our %TYPE_OF_CONTROL => (
+	' ' => 'No specified type',
+	'a' => 'Archival',
+);
 Readonly::Hash our %UNDEFINED => (
 	'0' => 'Undefined',
 );
@@ -172,6 +176,12 @@ sub desc_type {
 	my ($self, $type_code) = @_;
 
 	return $TYPE{$type_code};
+}
+
+sub desc_type_of_control {
+	my ($self, $type_of_control) = @_;
+
+	return $TYPE_OF_CONTROL{$type_of_control};
 }
 
 sub desc_undefined {
