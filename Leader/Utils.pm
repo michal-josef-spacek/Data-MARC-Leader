@@ -15,7 +15,7 @@ Readonly::Hash our %BIBLIOGRAPHIC_LEVEL => (
 	'm' => 'Monograph/Item',
 	's' => 'Serial',
 );
-Readonly::Hash our %CHAR_ENCODING_SCHEME => (
+Readonly::Hash our %CHAR_CODING_SCHEME => (
 	' ' => 'MARC-8',
 	'a' => 'UCS/Unicode',
 );
@@ -112,10 +112,10 @@ sub desc_bibliographic_level {
 	return $BIBLIOGRAPHIC_LEVEL{$level_code};
 }
 
-sub desc_char_encoding_scheme {
-	my ($self, $char_encoding_scheme) = @_;
+sub desc_char_coding_scheme {
+	my ($self, $char_coding_scheme) = @_;
 
-	return $CHAR_ENCODING_SCHEME{$char_encoding_scheme};
+	return $CHAR_CODING_SCHEME{$char_coding_scheme};
 }
 
 sub desc_descriptive_cataloging_form {

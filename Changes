@@ -1,4 +1,5 @@
 0.03
+ - Change API: Rename char_encoding_scheme() to char_coding_scheme().
 
 0.02 2023-11-19T14:19:59+01:00
  - Add Utils::desc_type_of_control().

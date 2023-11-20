@@ -6,7 +6,7 @@ SYNOPSIS
 
      my $obj = Data::MARC::Leader->new(%params);
      my $bibliographic_level = $obj->bibliographic_level;
-     my $char_encoding_scheme = $obj->char_encoding_scheme;
+     my $char_coding_scheme = $obj->char_coding_scheme;
      my $data_base_addr = $obj->data_base_addr;
      my $descriptive_cataloging_form = $obj->descriptive_cataloging_form;
      my $encoding_level = $obj->encoding_level;
@@ -32,7 +32,7 @@ METHODS
 
             TODO
 
-    *       "char_encoding_scheme"
+    *       "char_coding_scheme"
 
             TODO
 
@@ -101,8 +101,8 @@ METHODS
 
     Returns character.
 
-  "char_encoding_scheme"
-     my $char_encoding_scheme = $obj->char_encoding_scheme;
+  "char_coding_scheme"
+     my $char_coding_scheme = $obj->char_coding_scheme;
 
     TODO
 
@@ -189,7 +189,7 @@ EXAMPLE
 
      my $obj = Data::MARC::Leader->new(
              'bibliographic_level' => 'm',
-             'char_encoding_scheme' => 'a',
+             'char_coding_scheme' => 'a',
              'data_base_addr' => 541,
              'descriptive_cataloging_form' => 'i',
              'encoding_level' => ' ',
@@ -221,7 +221,7 @@ EXAMPLE
      #     private methods (0)
      #     internals: {
      #         bibliographic_level               "m",
-     #         char_encoding_scheme              "a",
+     #         char_coding_scheme                "a",
      #         data_base_addr                    541,
      #         descriptive_cataloging_form       "i",
      #         encoding_level                    " ",

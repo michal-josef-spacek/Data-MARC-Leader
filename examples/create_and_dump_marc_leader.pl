@@ -8,7 +8,7 @@ use Data::MARC::Leader;
 
 my $obj = Data::MARC::Leader->new(
         'bibliographic_level' => 'm',
-        'char_encoding_scheme' => 'a',
+        'char_coding_scheme' => 'a',
         'data_base_addr' => 541,
         'descriptive_cataloging_form' => 'i',
         'encoding_level' => ' ',
@@ -40,7 +40,7 @@ p $obj;
 #     private methods (0)
 #     internals: {
 #         bibliographic_level               "m",
-#         char_encoding_scheme              "a",
+#         char_coding_scheme                "a",
 #         data_base_addr                    541,
 #         descriptive_cataloging_form       "i",
 #         encoding_level                    " ",

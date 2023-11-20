@@ -8,7 +8,7 @@ use Mo::utils qw(check_strings);
 use Readonly;
 
 Readonly::Array our @BIBLIOGRAPHIC_LEVEL => qw(a b c d i m s);
-Readonly::Array our @CHAR_ENCODING_SCHEME => (' ', 'a');
+Readonly::Array our @CHAR_CODING_SCHEME => (' ', 'a');
 Readonly::Array our @DESCRIPTIVE_CATALOGING_FORM => (' ', 'a', 'c', 'i', 'n', 'u');
 Readonly::Array our @ENCODING_LEVEL => (' ', 1, 2, 3, 4, 5, 7, 8, 'u', 'z');
 Readonly::Array our @IMPL_DEF_PORTION_LEN => qw(0);
@@ -28,7 +28,7 @@ has bibliographic_level => (
 	is => 'ro',
 );
 
-has char_encoding_scheme => (
+has char_coding_scheme => (
 	is => 'ro',
 );
 
@@ -94,8 +94,8 @@ sub BUILD {
 	# Check bibliographic_level.
 	check_strings($self, 'bibliographic_level', \@BIBLIOGRAPHIC_LEVEL);
 
-	# Check char_encoding_scheme.
-	check_strings($self, 'char_encoding_scheme', \@CHAR_ENCODING_SCHEME);
+	# Check char_coding_scheme.
+	check_strings($self, 'char_coding_scheme', \@CHAR_CODING_SCHEME);
 
 	# Check descriptive_cataloging_form.
 	check_strings($self, 'descriptive_cataloging_form',
@@ -158,7 +158,7 @@ Data::MARC::Leader - Data object for MARC leader.
 
  my $obj = Data::MARC::Leader->new(%params);
  my $bibliographic_level = $obj->bibliographic_level;
- my $char_encoding_scheme = $obj->char_encoding_scheme;
+ my $char_coding_scheme = $obj->char_coding_scheme;
  my $data_base_addr = $obj->data_base_addr;
  my $descriptive_cataloging_form = $obj->descriptive_cataloging_form;
  my $encoding_level = $obj->encoding_level;
@@ -188,7 +188,7 @@ Constructor.
 
 TODO
 
-=item * C<char_encoding_scheme>
+=item * C<char_coding_scheme>
 
 TODO
 
@@ -260,9 +260,9 @@ Get bibliographic level flag.
 
 Returns character.
 
-=head2 C<char_encoding_scheme>
+=head2 C<char_coding_scheme>
 
- my $char_encoding_scheme = $obj->char_encoding_scheme;
+ my $char_coding_scheme = $obj->char_coding_scheme;
 
 TODO
 
@@ -367,7 +367,7 @@ TODO
 
  my $obj = Data::MARC::Leader->new(
          'bibliographic_level' => 'm',
-         'char_encoding_scheme' => 'a',
+         'char_coding_scheme' => 'a',
          'data_base_addr' => 541,
          'descriptive_cataloging_form' => 'i',
          'encoding_level' => ' ',
@@ -399,7 +399,7 @@ TODO
  #     private methods (0)
  #     internals: {
  #         bibliographic_level               "m",
- #         char_encoding_scheme              "a",
+ #         char_coding_scheme                "a",
  #         data_base_addr                    541,
  #         descriptive_cataloging_form       "i",
  #         encoding_level                    " ",
