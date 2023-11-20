@@ -22,7 +22,7 @@ Readonly::Array our @TYPE => qw(a c d e f g i j k m o p r t);
 Readonly::Array our @TYPE_OF_CONTROL => (' ', 'a');
 Readonly::Array our @UNDEFINED => ('0');
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 has bibliographic_level => (
 	is => 'ro',
@@ -441,6 +441,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.03
+0.04
 
 =cut
