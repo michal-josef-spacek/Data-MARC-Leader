@@ -1,4 +1,5 @@
 0.04
+ - Update copyright years.
 
 0.03 2023-11-20T14:39:39+01:00
  - Change API: Rename char_encoding_scheme() to char_coding_scheme().
