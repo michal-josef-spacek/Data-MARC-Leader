@@ -1,4 +1,5 @@
 0.04
+ - Add test with real data.
  - Improve doc of Data::MARC::Leader.
  - Update copyright years.
 
