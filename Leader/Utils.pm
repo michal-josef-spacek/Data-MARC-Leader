@@ -91,7 +91,7 @@ Readonly::Hash our %UNDEFINED => (
 	'0' => 'Undefined',
 );
 
-our $VERSION = 0.04;
+our $VERSION = 0.05;
 
 # Constructor.
 sub new {
