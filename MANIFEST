@@ -23,6 +23,8 @@ SIGNATURE
 t/Data-MARC-Leader-Utils/01-use.t
 t/Data-MARC-Leader-Utils/02-version.t
 t/Data-MARC-Leader-Utils/03-new.t
+t/Data-MARC-Leader-Utils/04-desc_bibliographic_level.t
+t/Data-MARC-Leader-Utils/05-desc_char_coding_scheme.t
 t/Data-MARC-Leader/01-use.t
 t/Data-MARC-Leader/02-version.t
 t/Data-MARC-Leader/03-new.t
