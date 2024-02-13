@@ -1,4 +1,4 @@
-0.06
+0.06 2024-02-13T08:06:38+01:00
  - Add tests.
  - Fix dependencies.
  - Move constant texts to module for English.
