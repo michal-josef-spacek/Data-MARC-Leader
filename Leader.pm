@@ -114,6 +114,9 @@ sub BUILD {
 	# Check indicator_count.
 	check_strings($self, 'indicator_count', \@INDICATOR_COUNT);
 
+	# Check length.
+	# TODO
+
 	# Check length_of_field_portion_len.
 	check_strings($self, 'length_of_field_portion_len',
 		\@LENGTH_OF_FIELD_PORTION_LEN);
