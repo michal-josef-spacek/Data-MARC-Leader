@@ -65,10 +65,6 @@ Readonly::Hash our %STATUS => (
 	'd' => decode_utf8('zrušený záznam'),
 	'n' => decode_utf8('nový záznam'),
 	'p' => decode_utf8('doplněný prozatímní záznam'),
-	# XXX not in "official" Czech translation (https://prirucky.ipk.nkp.cz/katalogizace/monografie/navesti)
-	's' => decode_utf8('zrušený záznam, záhlaví se rozdělilo na dvě či více záhlaví'),
-	# XXX not in "official" Czech translation (https://prirucky.ipk.nkp.cz/katalogizace/monografie/navesti)
-	'x' => decode_utf8('zrušený záznam, záhlaví nahrazeno jiným záhlavím'),
 );
 Readonly::Hash our %SUBFIELD_CODE_COUNT => (
 	'2' => decode_utf8('délka označení podpole'),
