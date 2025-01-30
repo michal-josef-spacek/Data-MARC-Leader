@@ -12,8 +12,7 @@ Readonly::Hash our %BIBLIOGRAPHIC_LEVEL => (
 	'c' => decode_utf8('sbírka'),
 	'd' => decode_utf8('podjednotka'),
 	'i' => decode_utf8('integrační zdroj m monografie'),
-	# XXX not in "official" Czech translation (https://prirucky.ipk.nkp.cz/katalogizace/monografie/navesti)
-	'm' => 'Monograph/Item',
+	'm' => decode_utf8('monografie'),
 	's' => decode_utf8('seriál'),
 );
 Readonly::Hash our %CHAR_CODING_SCHEME => (
@@ -25,8 +24,7 @@ Readonly::Hash our %DESCRIPTIVE_CATALOGING_FORM => (
 	'a' => 'AACR 2',
 	'c' => decode_utf8('vynechána interpunkce ISBD'),
 	'i' => decode_utf8('přítomna interpunkce ISBD'),
-	# XXX not in "official" Czech translation (https://prirucky.ipk.nkp.cz/katalogizace/monografie/navesti)
-	'n' => 'Non-ISBD punctuation omitted',
+	'n' => decode_utf8('vynechána interpunkce jiná než ISBD'),
 	'u' => decode_utf8('není znám'),
 );
 Readonly::Hash our %ENCODING_LEVEL => (
