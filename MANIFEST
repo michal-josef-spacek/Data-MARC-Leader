@@ -36,6 +36,8 @@ t/Data-MARC-Leader-Utils/07-desc_encoding_level.t
 t/Data-MARC-Leader/01-use.t
 t/Data-MARC-Leader/02-version.t
 t/Data-MARC-Leader/03-new.t
+t/Data-MARC-Leader/04-bibliographic_level.t
+t/Data-MARC-Leader/05-char_coding_scheme.t
 xt/Data-MARC-Leader-Utils-CES/01-pod_coverage.t
 xt/Data-MARC-Leader-Utils-CES/02-pod.t
 xt/Data-MARC-Leader-Utils-ENG/01-pod_coverage.t
