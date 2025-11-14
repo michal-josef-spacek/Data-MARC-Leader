@@ -90,7 +90,7 @@ Readonly::Hash our %UNDEFINED => (
 	'0' => 'Undefined',
 );
 
-our $VERSION = 0.07;
+our $VERSION = 0.08;
 
 1;
 

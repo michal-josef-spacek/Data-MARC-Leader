@@ -92,7 +92,7 @@ Readonly::Hash our %UNDEFINED => (
 	'0' => decode_utf8('není definován'),
 );
 
-our $VERSION = 0.07;
+our $VERSION = 0.08;
 
 1;
 
