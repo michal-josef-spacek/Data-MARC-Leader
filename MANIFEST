@@ -24,5 +24,7 @@ t/Data-MARC-Leader/02-version.t
 t/Data-MARC-Leader/03-new.t
 t/Data-MARC-Leader/04-bibliographic_level.t
 t/Data-MARC-Leader/05-char_coding_scheme.t
+t/Data-MARC-Leader/06-data_base_addr.t
+t/Data-MARC-Leader/07-descriptive_cataloging_form.t
 xt/Data-MARC-Leader/01-pod_coverage.t
 xt/Data-MARC-Leader/02-pod.t
